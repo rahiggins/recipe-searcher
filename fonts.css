@@ -1,0 +1,17 @@
+@font-face {
+      font-family: 'nyt-franklin';
+      src: url('./fonts/nyt-franklin-300-normal.woff') format('woff');
+      font-weight: 300;
+}
+
+@font-face {
+      font-family: 'nyt-franklin';
+      src: url('./fonts/nyt-franklin-500-normal.woff') format('woff');
+      font-weight: 500;
+}
+
+@font-face {
+      font-family: 'nyt-franklin';
+      src: url('./fonts/nyt-franklin-700-normal.woff') format('woff');
+      font-weight: 700;
+}

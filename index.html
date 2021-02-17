@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NYT Recipe Searcher</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="NYTcore.min.css">
+    <link rel="stylesheet" href="spectre.min.css">
+    <link rel="stylesheet" href="NYTstyles.css">
+    <style>      
+    .vertical-centerish {
+      margin: 0;
+      position: absolute;
+      top: 40%;
+      -ms-transform: translateY(-54%);
+      transform: translateY(-40%);
+    }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns m-2">
+        <div class="column col-12">
+        <div class="form-group">
+          <label class="form-label" for="recipeName" style="padding-bottom: 1px">Recipe name</label>
+          <input class="form-input" type="text" id="recipeName" placeholder="Required" required>
+        </div>
+        <div class="columns">
+          <div class="column col-1">
+            <button class="btn mt-1 btn-block" id="searchButton" disabled>Search</button>
+          </div>
+          <div class="column col-1">
+            <button class="btn mt-1 btn-block" id="stopButton" disabled>Stop</button>
+          </div>
+          <div class="column col-1">
+            <button class="btn mt-1 btn-block" id="clearButton" disabled>Clear</button>
+          </div>
+        </div>
+        <div id=msgs class="float-left">
+        </div>
+        <div style="clear: left"></div> 
+        <div class="divider"></div>
+        <div>
+          <h6>Exact matches</h6>
+          <section class="recipe-card-list track-card-params" data-layout="grid" id='exact'>
+          </section>
+        </div>
+        <div>
+          <h6>Fuzzy matches</h6>
+          <section class="recipe-card-list track-card-params" data-layout="grid" id='fuzzy'>
+          </section>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <script>
+      // You can also require other files to run in this process
+      require('./index-renderer.js')
+    </script>
+  </body>
+</html>
