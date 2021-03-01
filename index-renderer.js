@@ -1,3 +1,5 @@
+// Author version
+
 const { ipcRenderer } = require('electron'); // InterProcess Communications
 const puppeteer = require('puppeteer'); // Chrome API
 const cheerio = require('cheerio');           // implementation of core jQuery
