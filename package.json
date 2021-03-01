@@ -1,6 +1,6 @@
 {
   "name": "recipe-searcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search NYT Cooking search results",
   "main": "index.js",
   "scripts": {
@@ -9,10 +9,18 @@
   "author": "Me",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^11.2.1"
+    "electron": "^11.3.0"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.5",
     "puppeteer": "^5.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahiggins/recipe-searcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rahiggins/recipe-searcher/issues"
+  },
+  "homepage": "https://github.com/rahiggins/recipe-searcher#readme"
 }
